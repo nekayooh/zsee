@@ -6,6 +6,13 @@ edition = "2021"
 authors = ["nekayooh <nekayooh@139.com>"]
 readme = "README.md"
 description = "A dioxus component library based on tailwind and table-icons."
+repository = "https://github.com/nekayooh/zsee"
+include = [
+    "/Cargo.toml",
+    "/LICENSE",
+    "/README.md",
+    "/src/**",
+]
 
 [dependencies]
 dioxus = "0.4.3"

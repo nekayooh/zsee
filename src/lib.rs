@@ -1,5 +1,5 @@
 mod utils;
-pub use utils::{bson::bson_bool,bson::bson_str};
+pub use utils::{bson::{{eq_check,eq_check_one,doc_check,doc_get,bson_str,bson_vstr,bson_vdoc,bson_bool,bson_f64,bson_i64}},class::XZClass,micro::{zclass,zcs,zs,zab,zi18n},share::ZShare};
 
 mod icon;
 pub use icon::{ZIcon,ZIconProps};

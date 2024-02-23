@@ -200,31 +200,31 @@ pub fn bson_i64(bs: &bson::Document, key: &str) -> i64 {
     one_i64
 }
 
-pub fn _bson_i16(bs: &bson::Document, key: &str) -> i16 {
-    let mut one_i16 = 0;
-    match bs.clone().get_i32(&key) {
-        Ok(count) => {
-            one_i16 = count as i16;
-        }
-        _ => {
-            match bs.clone().get_i64(key) {
-                Ok(count) => {
-                    one_i16 = count as i16;
-                }
-                _ => {}
-            }
-        }
-    }
-    one_i16
-}
+// pub fn _bson_i16(bs: &bson::Document, key: &str) -> i16 {
+//     let mut one_i16 = 0;
+//     match bs.clone().get_i32(&key) {
+//         Ok(count) => {
+//             one_i16 = count as i16;
+//         }
+//         _ => {
+//             match bs.clone().get_i64(key) {
+//                 Ok(count) => {
+//                     one_i16 = count as i16;
+//                 }
+//                 _ => {}
+//             }
+//         }
+//     }
+//     one_i16
+// }
 
-pub fn _bson_time(bs: &bson::Document, key: &str) -> i64 {
-    let mut one_f64 = 0;
-    match bs.clone().get_datetime(&key) {
-        Ok(count) => {
-            one_f64 = count.timestamp_millis();
-        }
-        _ => {}
-    }
-    one_f64
-}
+// pub fn _bson_time(bs: &bson::Document, key: &str) -> i64 {
+//     let mut one_f64 = 0;
+//     match bs.clone().get_datetime(&key) {
+//         Ok(count) => {
+//             one_f64 = count.timestamp_millis();
+//         }
+//         _ => {}
+//     }
+//     one_f64
+// }
