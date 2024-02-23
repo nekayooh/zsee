@@ -1,6 +1,6 @@
 mod utils;
-pub use utils::{bson::{{eq_check,eq_check_one,doc_check,doc_get,bson_str,bson_vstr,bson_vdoc,bson_bool,bson_f64,bson_i64}},class::XZClass,share::ZShare};
-pub use utils::{zclass,zcs,zs,zab,zi18n};
+pub use utils::{bson::{{bson_str,bson_vstr,bson_vdoc,bson_bool,bson_f64,bson_i64}},class::XZClass,share::ZShare};
+pub use crate::{eq_check,eq_check_one,doc_check,doc_get,zclass,zcs,zs,zab,zi18n};
 
 mod icon;
 pub use icon::{ZIcon,ZIconProps};
