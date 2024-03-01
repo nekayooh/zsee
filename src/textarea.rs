@@ -19,8 +19,6 @@ pub struct ZTextareaProps<'a> {
     color: String,
     #[props(default = 3)]
     rows: i64,
-    #[props(into,default = zs!("text"))]
-    r#type: String,
     #[props(default = 999999)]
     maxlength: i64,
     #[props(default)]
@@ -71,7 +69,6 @@ pub fn ZTextarea<'a>(cx: Scope<'a, ZTextareaProps<'a>>) -> Element {
                     cx.props.class_input
                 ),
                 rows:cx.props.rows,
-                r#type:cx.props.r#type.as_str(),
                 maxlength:cx.props.maxlength,
                 onclick:move |_| {
                     focus.set(true);
