@@ -10,6 +10,9 @@ pub use button::{ZButton,ZButtonProps};
 mod input;
 pub use input::{ZInput,ZInputProps};
 
+mod textarea;
+pub use textarea::{ZTextarea,ZTextareaProps};
+
 mod checkbox;
 pub use checkbox::{ZCheckbox,ZCheckboxProps};
 
