@@ -65,7 +65,7 @@ pub fn ZSelect<'a>(cx: Scope<'a, ZSelectProps<'a>>) -> Element {
     });
     cx.render(rsx! {
         div {
-            class:zclass!("flex","flex-col"),
+            class:"w-full flex flex-col",
             div {
                 class: zclass!(
                     "rounded-[".to_owned()+zshare.read().radius.as_str()+"] border hover:ring-inset transition flex items-center overflow-hidden flex-none",
