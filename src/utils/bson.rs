@@ -139,6 +139,17 @@ pub fn bson_vdoc(bs: &bson::Document, key: &str) -> Vec<Document> {
     }
 }
 
+pub fn bson_doc(bs: &bson::Document, key: &str) -> Document {
+    match bs.clone().get_document(&key) {
+        Ok(doc) => {
+            doc
+        }
+        _ => {
+           doc! {}
+        }
+    }
+}
+
 pub fn bson_bool(bs: &bson::Document, key: &str) -> bool {
     match bs.clone().get_bool(&key) {
         Ok(one) => {
